@@ -5,8 +5,11 @@ $(function () {
     $.get("parts/Hero.html", function (data) {
         $("#Hero").append(data);
     });
-    $.get("parts/Skills-Edu.html", function (data) {
-        $("#Skills-Edu").append(data);
+    $.get("parts/Skills.html", function (data) {
+        $("#Skills").append(data);
+    });
+    $.get("parts/Edu.html", function (data) {
+        $("#Edu").append(data);
     });
     $.get("parts/Experience.html", function (data) {
         $("#Experience").append(data);
