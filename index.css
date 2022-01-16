@@ -2,7 +2,18 @@
     body{
         padding-top: 65px;
     }
+    #hero2{
+        position: relative;
+        top: 13rem;
+    }
   }
   #Hero, #Skills-Edu, #Experience, #Projects {
     min-height: 100vh;
+}
+.body{
+    position: relative;
+}
+#hero2{
+    position: relative;
+    top: 5rem;
 }
