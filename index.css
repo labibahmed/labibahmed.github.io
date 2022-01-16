@@ -1,4 +1,8 @@
-#Hero, #Skills-Edu, #Experience, #Projects {
-    height: 100vh;
+@media only screen and (min-width: 600px) {
+    body{
+        padding-top: 65px;
+    }
+  }
+  #Hero, #Skills-Edu, #Experience, #Projects {
+    min-height: 100vh;
 }
-
