@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+<link rel='stylesheet' type='text/css' media='screen' href='./node_modules/pagepiling.js/jquery.pagepiling.css'>
 <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
-
 
 <head>
     <meta charset='utf-8'>
@@ -10,21 +10,32 @@
     <title>Ashhab</title>
     <link rel="icon" type="image/x-icon" href="/parts/icon.svg">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="main.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="./node_modules/pagepiling.js/dist/jquery.pagepiling.min.js"></script>
+    <script src="main.js"></script>
+
+
 </head>
 
-<body class="bg-dark text-white text-justify" id="body" data-bs-spy="scroll" data-bs-target=".navbar"
-    data-bs-offset="20">
-
-    <div id="Hero" class="container mx-auto row"></div>
-    <div id="Skills-Edu">
-        <div id="Skills"></div>
-        <div id="Edu"></div>
+<body class="bg-dark text-white text-justify" id="body">
+    <div id="pagepiling">
+        <div id="Hero" class="sec pp-scrollable">
+            <div class="container bg-dark mx-auto p-0"></div>
+        </div>
+        <div class="sec pp-scrollable">
+            <div id="Skills-Edu" class="p-0 bg-dark">
+                <div id="Skills"></div>
+                <div id="Edu"></div>
+            </div>
+        </div>
+        <div class="sec pp-scrollable">
+            <div id="Experience" class=" bg-dark "></div>
+        </div>
+        <div class="sec pp-scrollable">
+            <div id="Projects" class="bg-dark"></div>
+        </div>
     </div>
-    <div id="Experience"></div>
-    <div id="Projects"></div>
 </body>
 
 </html>

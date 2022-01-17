@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+<nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
     <div class="container">
 
         <a class="navbar-brand" href="#Hero">
@@ -9,17 +9,17 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <ul class="navbar-nav">
-                <li>
-                    <a class="nav-link" aria-current="page" href="#Hero">Home</a>
+            <ul id="myMenu" class="nav navbar-nav">
+                <li data-menuanchor="Home" class="active">
+                    <a class="nav-link" aria-current="page" href="#Hero" onclick="onClick()">Home</a>
                 </li>
-                <li>
+                <li data-menuanchor="Qualifications" class="active">
                     <a class="nav-link" href="#Skills-Edu">Qualifications</a>
                 </li>
-                <li>
+                <li data-menuanchor="Expereince" class="active">
                     <a class="nav-link" href="#Experience">Experience</a>
                 </li>
-                <li>
+                <li data-menuanchor="Projects" class="active">
                     <a class="nav-link" href="#Projects">Projects</a>
                 </li>
             </ul>
