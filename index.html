@@ -10,32 +10,80 @@
     <title>Ashhab</title>
     <link rel="icon" type="image/x-icon" href="/parts/icon.svg">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="./node_modules/pagepiling.js/dist/jquery.pagepiling.min.js"></script>
-    <script src="main.js"></script>
 
 
 </head>
 
-<body class="bg-dark text-white text-justify" id="body">
-    <div id="pagepiling">
-        <div id="Hero" class="sec pp-scrollable">
-            <div class="container bg-dark mx-auto p-0"></div>
+<body class="text-white text-justify bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
+        <div class="container">
+
+            <a class="navbar-brand" href="#Home">
+                <img src="/parts/icon.svg" height="30" width="30" alt="Home" />
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul id="menu" class="nav nav-pills navbar-nav">
+                    <li data-menuanchor="Home">
+                        <a class="nav-link home-list active" href="#Home" onclick="onClick()">Home</a>
+                    </li>
+                    <li data-menuanchor="Qualifications">
+                        <a class="nav-link qual-list" href="#Qualifications">Qualifications</a>
+                    </li>
+                    <li data-menuanchor="Experience">
+                        <a class="nav-link exp-list" href="#Experience">Experience</a>
+                    </li>
+                    <li data-menuanchor="Projects">
+                        <a class="nav-link pro-list" href="#Projects">Projects</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="sec pp-scrollable">
+    </nav>
+
+    <div class="bg-dark" id="pagepiling">
+        <div id="Home" class="section bg-dark pp-scrollable">
+        </div>
+
+        <div id="Qualifications" class="pt-3 section pp-scrollable">
             <div id="Skills-Edu" class="p-0 bg-dark">
                 <div id="Skills"></div>
                 <div id="Edu"></div>
             </div>
         </div>
-        <div class="sec pp-scrollable">
-            <div id="Experience" class=" bg-dark "></div>
+
+        <div id="Experience" class="pt-3 section bg-dark pp-scrollable">
         </div>
-        <div class="sec pp-scrollable">
-            <div id="Projects" class="bg-dark"></div>
+
+        <div id="Projects" class="pt-3 section bg-dark pp-scrollable">
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="./node_modules/pagepiling.js/dist/jquery.pagepiling.min.js"></script>
+    <script src="main.js"></script>
+    <style>
+        @keyframes fade {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 100;
+            }
+        }
+
+        #Home {
+            animation-name: fade;
+            animation-duration: 1s;
+        }
+    </style>
 </body>
 
 </html>

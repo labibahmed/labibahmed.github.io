@@ -1,19 +1,23 @@
+#Home, #Skills-Edu, #Experience, #Projects {
+    min-height: 100vh;
+}
+
+#hero2{
+    position: relative;
+    top: 7rem;
+}
+
 @media only screen and (min-width: 600px) {
     body{
         padding-top: 0px;
+        margin-top: 0;
     }
+
     #hero2{
-        position: relative;
-        top: 100rem;
+        top: 12rem;
     }
   }
-#Hero, #Skills-Edu, #Experience, #Projects {
-    min-height: 100vh;
-}
-.body{
-    position: relative;
-}
-#hero2{
-    position: relative;
-    top: 13rem;
+
+#Qualifications, #Experience, #Projects {
+    opacity: 0;
 }
