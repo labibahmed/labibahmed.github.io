@@ -41,7 +41,7 @@
         id="liveToastBtn">Let's work
         together!</button>
 
-    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 20">
+    <div class="position-fixed bottom-0 end-0 p-sm-3 me-sm-4" style="z-index: 20">
         <div id="liveToast" class="toast bg-dark hide" style="min-height: 500px; min-width: 190px;" role="alert"
             aria-live="assertive" aria-atomic="true">
 
@@ -52,30 +52,33 @@
 
 
             <div class="toast-body bg-dark">
-                <div class="row">
-                    <div class="mb-3 col">
-                        <label class="form-label text-white-50 colFormLabelSm">Full Name</label>
-                        <input type="email" class="form-control form-control-sm bg-dark">
-                    </div>
-                    <div class="mb-3 col">
-                        <label class="form-label text-white-50 colFormLabelSm">Phone</label>
-                        <input type="email" class="form-control form-control-sm bg-dark">
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label class="form-label text-white-50 colFormLabelSm">Email</label>
-                    <input type="email" class="form-control form-control-sm bg-dark">
-                </div>
-                <div class="my-4">
-                    <div class="form-floating">
-                        <textarea class="form-control form-control-lg bg-dark" style="min-height: 200px"
-                            rows="3"></textarea>
-                        <label class="form-label">Tell me more about yourself!</label>
-                    </div>
-                </div>
+                <form action="https://formsubmit.co/ashhab.ahmed@ryerson.ca" method="POST">
 
-                <button type="button" class="btn btn-lg btn-primary my-5 my-sm-2 my-md-5 d-block" onclick="toastShow()"
-                    id="liveToastBtn"></button>
+                    <div class="row">
+                        <div class="mb-3 col">
+                            <label class="form-label text-white-50 colFormLabelSm">Full Name</label>
+                            <input type="email" class="form-control form-control-sm bg-dark">
+                        </div>
+                        <div class="mb-3 col">
+                            <label class="form-label text-white-50 colFormLabelSm">Phone</label>
+                            <input type="email" class="form-control form-control-sm bg-dark">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label text-white-50 colFormLabelSm">Email</label>
+                        <input type="email" class="form-control form-control-sm bg-dark">
+                    </div>
+                    <div class="my-3">
+                        <div class="form-floating">
+                            <textarea class="form-control form-control-lg bg-dark" style="min-height: 200px"
+                                rows="3"></textarea>
+                            <label class="form-label">Tell me more about yourself!</label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn btn-primary d-block" onclick="toastShow()"
+                        id="liveToastBtn">Send</button>
+                </form>
             </div>
         </div>
     </div>
