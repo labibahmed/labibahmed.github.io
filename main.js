@@ -21,7 +21,7 @@ $(function () {
         verticalCentered: true,
         sectionsColor: [],
         anchors: ['Home', 'Qualifications', 'Experience', 'Projects'],
-        scrollingSpeed: 600,
+        scrollingSpeed: 0,
         easing: 'swing',
         loopBottom: true,
         loopTop: true,
