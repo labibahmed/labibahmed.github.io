@@ -97,6 +97,17 @@ $(function () {
     });
 });
 
+var options = {
+    animation: true,
+    delay: 2000,
+    autohide: false
+}
+function toastShow() {
+    var toastElement = $('#liveToast');
+    var toast = new bootstrap.Toast(toastElement, options);
+    toast.show();
+}
+
 function onClick() {
     $('.navbar-collapse a').on("click", function () {
         $(".navbar-collapse").collapse('hide');
