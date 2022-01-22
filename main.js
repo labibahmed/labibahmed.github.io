@@ -1,8 +1,5 @@
 var gsapAni = gsap.timeline();
 $(function () {
-    /*$.get("parts/Nav.html", function (data) {
-        $("body").prepend(data);
-    });*/
     $.get("parts/Hero.html", function (data) {
         $("#Home").append(data);
     });
@@ -112,4 +109,21 @@ function onClick() {
     $('.navbar-collapse a').on("click", function () {
         $(".navbar-collapse").collapse('hide');
     });
+}
+
+var options2 = {
+    animation: true,
+    delay: 4000,
+    autohide: true
+}
+
+function thankYou() {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const thank = urlParams.get('thank')
+    if (thank == 'true') {
+        var toastElement = $('#SuccessToast');
+        var toast = new bootstrap.Toast(toastElement, options2);
+        toast.show();
+    }
 }
