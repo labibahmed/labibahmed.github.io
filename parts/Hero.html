@@ -24,7 +24,7 @@
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" />
                 <img class="col d-none d-lg-inline"
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
-                <img class="cor"
+                <img class="col"
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original-wordmark.svg" />
                 <img class="col d-none d-xl-inline"
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg" />
@@ -37,9 +37,16 @@
             </div>
         </div>
     </div>
-    <button type="button" class="btn btn-lg btn-primary my-5 my-sm-2 my-md-5 d-block" onclick="toastShow()"
-        id="liveToastBtn">Let's work
-        together!</button>
+    <div class="my-5 my-sm-2 my-md-3">
+        <button type="button" class="btn my-3 my-sm-1 btn-primary me-3" onclick="toastShow()" id="liveToastBtn">Let's
+            work
+            together!</button>
+        <button type="button" onclick="window.location.href='https://github.com/labibahmed';"
+            class="btn  btn-secondary me-3">GitHub</button>
+        <button type="button"
+            onclick="window.location.href='https://www.linkedin.com/in/ashhab-ahmed-labib-104b01194/';"
+            class="btn btn-secondary ">LinkedIn</button>
+    </div>
 
     <div class="position-fixed bottom-0 end-0 p-sm-3 me-sm-4" style="z-index: 20">
         <div id="liveToast" class="toast bg-dark hide" style="min-height: 500px; min-width: 190px;" role="alert"
@@ -76,8 +83,8 @@
 
 
                     <div class="form-floating col-12">
-                        <textarea class="form-control colFormLabelSm text-white form-control-lg bg-dark" name="comments"
-                            required style="min-height: 200px" rows="3"></textarea>
+                        <textarea class="form-control  text-white form-control-lg bg-dark" name="comments" required
+                            style="min-height: 200px" rows="3"></textarea>
                         <label class="form-label">Tell me more about yourself!</label>
                     </div>
 

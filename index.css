@@ -7,9 +7,6 @@
     top: 5rem;
 }
 
-#Qualifications, #Experience, #Projects {
-    opacity: 0;
-}
 
 .progress {
     height: 30px;

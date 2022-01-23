@@ -1,4 +1,3 @@
-var gsapAni = gsap.timeline();
 $(function () {
     $.get("parts/Hero.html", function (data) {
         $("#Home").append(data);
@@ -44,23 +43,15 @@ $(function () {
             switch (index) {
                 case 1:
                     $(".home-list").removeClass("active");
-                    gsapAni
-                        .to("#Home", { duration: 0, opacity: 0 });
                     break;
                 case 2:
                     $(".qual-list").removeClass("active");
-                    gsapAni
-                        .to("#Qualifications", { duration: 0, opacity: 0 });
                     break;
                 case 3:
                     $(".exp-list").removeClass("active");
-                    gsapAni
-                        .to("#Experience", { duration: 0, opacity: 0 });
                     break;
                 case 4:
                     $(".pro-list").removeClass("active");
-                    gsapAni
-                        .to("#Projects", { duration: 0, opacity: 0 });
                     break;
             }
 
@@ -69,24 +60,58 @@ $(function () {
             switch (index) {
                 case 1:
                     $(".home-list").addClass("active");
+                    var gsapAni = gsap.timeline({
+                        defaults: { durations: 3, ease: Linear.easeNone }
+                    });
                     gsapAni
-                        .fromTo("#Home", 2, { opacity: 0 }, { opacity: 100 });
+                        .fromTo("h5", 0.5, { autoAlpha: 0 }, { autoAlpha: 1 });
+                    gsapAni
+                        .fromTo("h1", 0.5, { autoAlpha: 0 }, { autoAlpha: 1 });
+                    gsapAni
+                        .fromTo("p", 0.5, { autoAlpha: 0 }, { autoAlpha: 1 });
+                    gsapAni
+                        .fromTo("img, svg", 2, { autoAlpha: 0 }, { autoAlpha: 1, stagger: 0.1 }, "-=1.5");
+                    gsapAni
+                        .fromTo(".btn", 0.3, { autoAlpha: 0 }, { autoAlpha: 1, stagger: 0.1 }, "-=0.5");
 
                     break;
                 case 2:
                     $(".qual-list").addClass("active");
+                    var gsapAni = gsap.timeline({
+                        defaults: { durations: 3, ease: Linear.easeNone }
+                    });
                     gsapAni
-                        .fromTo("#Qualifications", 2, { opacity: 0 }, { opacity: 100 });
+                        .fromTo("h1.pt-3", 0.8, { autoAlpha: 0 }, { autoAlpha: 1 },);
+                    gsapAni
+                        .fromTo(".col .card", 0.5, { autoAlpha: 0 }, { autoAlpha: 1, stagger: 0.3 }, "-=1.0");
+                    gsapAni
+                        .fromTo(".progress", 0.5, { autoAlpha: 0 }, { autoAlpha: 1, stagger: 0.3 }, "-=2.5");
+                    gsapAni
+                        .fromTo(".edu", 0.8, { autoAlpha: 0 }, { autoAlpha: 1 },);
+                    gsapAni
+                        .fromTo("h5", 0.5, { autoAlpha: 0 }, { autoAlpha: 1 })
+                        .fromTo(".text-sm-end", 0.5, { autoAlpha: 0 }, { autoAlpha: 1 });
+
                     break;
                 case 3:
                     $(".exp-list").addClass("active");
+                    var gsapAni = gsap.timeline({
+                        defaults: { durations: 3, ease: Linear.easeNone }
+                    });
                     gsapAni
-                        .fromTo("#Experience", 2, { opacity: 0 }, { opacity: 100 });
+                        .fromTo("h1", 0.5, { autoAlpha: 0 }, { autoAlpha: 1 });
+                    gsapAni
+                        .fromTo(".card-columns .card", 0.5, { autoAlpha: 0 }, { autoAlpha: 1, stagger: 0.3 });
                     break;
                 case 4:
                     $(".pro-list").addClass("active");
+                    var gsapAni = gsap.timeline({
+                        defaults: { durations: 3, ease: Linear.easeNone }
+                    });
                     gsapAni
-                        .fromTo("#Projects", 2, { opacity: 0 }, { opacity: 100 });
+                        .fromTo("h1", 0.8, { autoAlpha: 0 }, { autoAlpha: 1 });
+                    gsapAni
+                        .fromTo(".col .card", 0.5, { autoAlpha: 0 }, { autoAlpha: 1, stagger: 0.3 }, "-=1");
                     break;
             }
         },
